@@ -12,10 +12,6 @@
     grid-template-columns: 1fr;
     grid-gap: 2em;
 }
-.col-4 {
-    display: grid;
-    grid-template-columns: repeat(4*1fr);
-}
 // ipad//
 @media screen and (min-width: 37.5em) {
     .col-2 {

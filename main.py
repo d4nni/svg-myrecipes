@@ -32,7 +32,7 @@ bread_html = bread_template.render(posts=posts_metadata, tags=tags)
 with open('../svg-myrecipes-output/index.html', 'w', encoding="utf-8") as file:
     file.write(index_html)
 
-with open('../svg-myrecipes-output/bread.html', 'w') as file:
+with open('../svg-myrecipes-output/bread.html', 'w', encoding="utf-8") as file:
     file.write(bread_html)
 
 for post in POSTS:

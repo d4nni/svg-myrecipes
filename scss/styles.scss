@@ -14,7 +14,7 @@ h1, h2, h3 {
     margin: auto;
     margin-top: 3em;
 }
-img {
+.image {
     max-width: 100%;
     height: auto;
 }
@@ -48,18 +48,6 @@ img {
 .button:hover {
     background-color: #037496;
 }
-.HeimasidaLinkur {
-    text-decoration: none;
-    color: black;
-    border: 1px solid gray;
-    border-radius: .5em;
-    background-color: #f77;
-    margin: auto;
-    padding: .2em .2em;
-}
-.HeimasidaLinkur:hover {
-    background-color: #037496;
-}
 .col-3-1 {
     display: grid;
     grid-template-columns: 3.25fr 1fr;
@@ -71,12 +59,17 @@ img {
 .col-4 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2em;
+    align-items: center;
 }
 .topmenu {
     display: flex;
     flex-flow: row;
-    justify-content: flex-end;
+    justify-content: space-around;
     list-style-type: none;
+}
+.topmenu a {
+    text-decoration-line: none;
 }
 .headcol-2 {
     display: grid;

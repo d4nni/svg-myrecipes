@@ -1,6 +1,6 @@
 .container {
     max-width: 80em;
-    margin: 0 auto;
+    margin: 1em auto;
 }
 .col-2 {
     display: grid;
@@ -11,6 +11,17 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2em;
+}
+.headcol-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.col-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    align-items: center;
+    margin: 1em 0;
 }
 // ipad//
 @media screen and (min-width: 37.5em) {
@@ -23,6 +34,17 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2em;
+    }
+    .headcol-2 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .col-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
+        align-items: center;
+        margin: 1em 0;
     }
 }
 // fartölvur//
@@ -41,5 +63,16 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2em;
         justify-content: center;
+    }
+    .headcol-2 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .col-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
+        align-items: center;
+        margin: 1em 0;
     }
 }

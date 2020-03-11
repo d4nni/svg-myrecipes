@@ -18,6 +18,10 @@ h1, h2, h3 {
     max-width: 100%;
     height: auto;
 }
+.imgs {
+    max-width: 100%;
+    height: auto;
+}
 .mybutton {
     background-color: #f77;
     font-size: 0.75em;
@@ -58,25 +62,34 @@ h1, h2, h3 {
 }
 .col-4 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 2em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
     align-items: center;
+    margin: 1em 0;
 }
 .topmenu {
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style-type: none;
 }
 .topmenu a {
     text-decoration-line: none;
 }
-.headcol-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 .topnav {
     padding-top: 1em;
 } 
+.auglysing {
+    grid-area: auglysing;
+    border: dotted black 2px;
+    text-align: center;
+    padding: 1em;
+}
+.splashlogo {
+    grid-area: splashlogo;
+}
+.kynning {
+    grid-area: kynning;
+}
 //ná í stílsíðuna
-@import "layout";
+@import "layout.scss";

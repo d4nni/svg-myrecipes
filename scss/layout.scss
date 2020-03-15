@@ -23,6 +23,38 @@
     align-items: center;
     margin: 1em 0;
 }
+.topmenu {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+}
+.auglysing {
+    grid-area: auglysing;
+    border: dotted black 1px;
+    text-align: center;
+    padding: 1em;
+}
+.splashlogo {
+    grid-area: splashlogo;
+}
+.kynning {
+    grid-area: kynning;
+}
+.col-3-1 {
+    display: grid;
+    grid-template-columns: 3.25fr 1fr;
+    grid-gap: 2em;
+    grid-template-areas:
+        "splashlogo auglysing"
+        "kynning auglysing";
+}
+.col-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    align-items: center;
+    margin: 1em 0;
+}
 // ipad//
 @media screen and (min-width: 37.5em) {
     .col-2 {

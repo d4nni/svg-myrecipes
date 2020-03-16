@@ -50,7 +50,7 @@
 }
 .col-4 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1em;
     align-items: center;
     margin: 1em 0;
@@ -73,7 +73,7 @@
     }
     .col-4 {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 1em;
         align-items: center;
         margin: 1em 0;
@@ -102,7 +102,7 @@
     }
     .col-4 {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 1em;
         align-items: center;
         margin: 1em 0;

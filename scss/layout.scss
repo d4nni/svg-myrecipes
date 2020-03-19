@@ -1,6 +1,7 @@
 .container {
     max-width: 80em;
     margin: 1em auto;
+    justify-items: center;
 }
 .col-2 {
     display: grid;
@@ -25,8 +26,9 @@
 }
 .topmenu {
     display: flex;
-    flex-flow: row;
-    justify-content: flex-end;
+    flex-flow: column;
+    justify-content: center;
+    list-style-type: none;
 }
 .auglysing {
     grid-area: auglysing;
@@ -42,18 +44,12 @@
 }
 .col-3-1 {
     display: grid;
-    grid-template-columns: 3.25fr 1fr;
+    grid-template-columns:1fr;
     grid-gap: 2em;
     grid-template-areas:
-        "splashlogo auglysing"
-        "kynning auglysing";
-}
-.col-4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1em;
-    align-items: center;
-    margin: 1em 0;
+        "splashlogo"
+        "kynning" 
+        "auglysing";
 }
 // ipad//
 @media screen and (min-width: 37.5em) {
@@ -77,6 +73,32 @@
         grid-gap: 1em;
         align-items: center;
         margin: 1em 0;
+    }
+    .topmenu {
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        list-style-type: none;
+    }
+    .col-3-1 {
+        display: grid;
+        grid-template-columns: 3.25fr 1fr;
+        grid-gap: 2em;
+        grid-template-areas:
+            "splashlogo auglysing"
+            "kynning auglysing";
+    }
+    .auglysing {
+        grid-area: auglysing;
+        border: dotted black 1px;
+        text-align: center;
+        padding: 1em;
+    }
+    .splashlogo {
+        grid-area: splashlogo;
+    }
+    .kynning {
+        grid-area: kynning;
     }
 }
 // fartölvur//
@@ -106,5 +128,31 @@
         grid-gap: 1em;
         align-items: center;
         margin: 1em 0;
+    }
+    .topmenu {
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        list-style-type: none;
+    }
+    .col-3-1 {
+        display: grid;
+        grid-template-columns: 3.25fr 1fr;
+        grid-gap: 2em;
+        grid-template-areas:
+            "splashlogo auglysing"
+            "kynning auglysing";
+    }
+    .auglysing {
+        grid-area: auglysing;
+        border: dotted black 1px;
+        text-align: center;
+        padding: 1em;
+    }
+    .splashlogo {
+        grid-area: splashlogo;
+    }
+    .kynning {
+        grid-area: kynning;
     }
 }

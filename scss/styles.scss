@@ -76,12 +76,6 @@ div .imgs {
 .anotherButton:hover {
     background-color: lighten($color:red, $amount: 25%);
 }
-.topmenu {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    list-style-type: none;
-}
 .topmenu a {
     text-decoration-line: none;
     color: black;
